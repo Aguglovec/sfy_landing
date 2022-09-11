@@ -19,7 +19,14 @@ module.exports = {
         heroBgLeft: "url('../dist/img/bg_left.png') ",
         heroBgRight: "url('../dist/img/bg_right.png') ",
 
-      }
+      },
+
+      backgroundSize: {
+        '100%': '100%',
+        '70%': '70%',
+        '50%': '50%',
+        '33%': '33%',
+      },
     },
   },
   plugins: [],
