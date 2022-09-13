@@ -7,11 +7,13 @@ module.exports = {
         center:true,
       },
       colors: {
-        base: '#EEFFFE',
+        baseC: '#EEFFFE',
         title: '#0F6B55',
         heroMain: '#054032',
+        textMaim: '#423A2E',
         formText: '#06392D',
         formPlaceholder: '#283D2A',
+        serumBg: '#B0F69752',
 
       },
 
@@ -27,6 +29,8 @@ module.exports = {
         '50%': '50%',
         '33%': '33%',
       },
+
+    
     },
   },
   plugins: [],

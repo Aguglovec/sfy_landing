@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="text-textMaim">
 <section id="hero" >
-    <div class="container bg-base bg-heroBgLeft bg-left-bottom bg-no-repeat">
+    <div class="container bg-baseC bg-heroBgLeft bg-left-bottom bg-no-repeat">
         <div class=" px-4 md:pl-28 pb-32 bg-no-repeat bg-heroBgRight bg-right-top relative bg-50% sm:bg-40% lg:bg-auto bg-transparent bg-opacity-25" >
             <img src="./img/Logo vector.png" alt="logo" class="absolute top-6 left-[50%] -translate-x-2/4 w-36 hidden sm:block">
             <p class="pt-7">тел: 809874586873 <br> e-mail: <a href="mailto:speshfy@gmail.com">speshfy@gmail.com</a></p>
             <!-- <img src="./img/bg_left.png" alt="bg_left" class="absolute bottom-0 left-o hidden lg:block h-[836px] z-0">
             <img src="./img/bg_right.png" alt="bg_right" class="absolute top-0 right-0 hidden lg:block h-[836px] z-0"> -->
-            <img src="./img/hero.png" alt="hero" class="absolute bottom-0 right-16 hidden md:block h-[836px] z-0">
+            <img src="./img/hero.png" alt="hero" class="absolute bottom-0 right-0 lg:right-16 hidden md:block h-[836px] z-0">
             <img src="./img/heroMobile.png" alt="hero" class="absolute top-1/4 left-2/4 -translate-x-2/4 md:hidden h-96 z-0">
 
             <div class="w-full relative mt-11 sm:mt-36 lg:mt-56 z-50 text-title">
@@ -31,28 +31,173 @@
                     <p class="text-formText text-center lg:text-2xl mt-5 mb-4 lg:mb-7">Закажи бесплатную консультацию<br>прямо сейчас!</p>
                     <input type="text" name="name" placeholder="Введите имя" class="placeholder-formPlaceholder mb-4 lg:mb-6  w-3/4 h-10 text-center tracking-widest rounded-2xl shadow-[0_4px_11px_0px_rgba(0,0,0,0.25)]">
                     <input type="text" name="phone" placeholder="Введите телефон" class="placeholder-formPlaceholder mb-4 lg:mb-6  w-3/4 h-10 text-center tracking-widest rounded-2xl shadow-[0_4px_11px_0px_rgba(0,0,0,0.25)]">
-                    <button class="w-56 h-12 mb-4 md:mb-7 bg-pink-500 rounded-3xl lg:text-2xl text-white ">Отправить</button>
+                    <button class="w-56 h-12 mb-4 md:mb-7 bg-pink-500 rounded-3xl lg:text-2xl text-white">Отправить</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
 <section id="serum">
-    <div class="container pt-32 bg-base">
-        <h2 class=" text-title text-4xl lg:text-6xl tracking-widest text-center ">SERUM</h2>
-        <p>Сыворотки для лица – продукт, который стремительно набирает популярность не только в профессиональном сегменте но и домашнем уходе</p>
-    <div class="flex flex-row justify-around items-center"></div>
-        <div  class="flex flex-col justify-around items-center w-2/5">
-            <p>Каждый продукт уникален и может иметь одну или несколько функций в зависимости от используемых ингредиентов</p>
-            <img src="./img/serumVectorLeftBg.svg" alt="background">
-            <img src="./img/serumVectorLeft.png" alt="face">
-        </div>
-        <div  class="flex flex-col justify-around items-center w-2/5">
-            <p>Сыворотки SFY разрабатываются под Ваши потребности, на основе эффективных ингредиентов</p>
-            <img src="./img/serumRight.png" alt="hands">
+    <div class="container px-4 md:px-10 lg:px-28 pb-28 bg-baseC ">
+        <h2 class="py-12 lg:py-32 text-title text-4xl lg:text-6xl tracking-widest text-center ">SERUM</h2>
+        <p class="mb-11 text-xl lg:text-4xl">Сыворотки для лица – продукт, который стремительно набирает популярность не только в профессиональном сегменте но и в домашнем уходе</p>
 
+        
+        <div class="flex flex-col sm:flex-row justify-center items-start relative">
+            <img src="./img/serumVectorLine1.svg" alt="background line" class="absolute -top-20 -left-20 z-0 ">
+
+            <div  class="pb-16 flex flex-col justify-center items-center relative ">
+                <p class="pb-11 text-sm lg:text-xl w-4/5">Каждый продукт уникален и может иметь одну или несколько функций в зависимости от используемых ингредиентов</p>
+                <div class="relative flex items-center justify-center h-fit">
+                    <img src="./img/serumVectorLeftBg.svg" alt="background" class="absolute top-0 z-10">
+                    <img src="./img/serumVectorLeft.png" alt="face" class="relative top-0 z-30 w-4/5">
+            </div>
+            </div>
+            <div  class="pb-16 flex flex-col justify-center items-center relative ">
+                <p class="pb-11 text-sm lg:text-xl w-4/5">Сыворотки SFY разрабатываются под Ваши потребности, на основе эффективных ингредиентов</p>
+                <img src="./img/serumRight.png" alt="hands" class="w-3/4 h-3/4 z-30 top-28 left-10">
+                <div class="absolute bg-fuchsia-600 bg-opacity-20 w-3/4 h-3/4 z-0 top-16 left-4"></div>
+                <div class="absolute bg-fuchsia-600 bg-opacity-25 w-3/4 h-3/4 z-0 top-20 left-8"></div>
+
+            </div>
+        </div>
+        <div class="p-10 bg-serumBg bg-opacity-40 relative">
+            <img src="./img/serumVectorLine2.svg" alt="background line" class="absolute -top-20 -left-20 z-30 ">
+            <p class=" text-base lg:text-2xl ">Мы изготовим сыворотку, которая будет подходить вашему типу кожи и решать желаемые задачи, Вы получайте максимум эффекта от повседневного уходового ритуала</p>
         </div>
     </div>
 
 </section>
+
+<section id="bullets1">
+    <div class="container bg-baseC mx-auto flex pt-10 md:flex-row flex-col items-center ">
+      <div class="relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
+        <img class="relative object-cover object-center w-3/4 h-3/4 z-30" alt="bottles" src="./img/bulletpoints1.png">
+        <div class="absolute bg-yellow-200 bg-opacity-40 w-5/6 h-[125%] z-10 -top-20 left-10"></div>
+        <div class="absolute bg-yellow-500 bg-opacity-25 w-4/6 h-full z-10 -top-10 left-20"></div>
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:px-28 md:px-16 px-10 flex flex-col md:items-start md:text-left items-center ">
+        <h3 class="sm:text-4xl text-3xl mb-4 ">Основные функции сыворотки для лица</h3>
+        <ul class="text-base lg:text-xl list-disc mb-8 ">
+            <li class="leading-loose">Увлажнение, защита кожи от обезвоживания и восстановление водно-липидного баланса;</li>
+            <li class="leading-loose">Питание, смягчение кожи;</li>
+            <li class="leading-loose">Регенерация клеток;</li>
+            <li class="leading-loose">Повышение плотности эпидермиса;</li>
+            <li class="leading-loose">Стимуляция синтеза коллагена и эластина (для упругости и эластичности кожи)</li>
+            <li class="leading-loose">Осветление пигментации;</li>
+            <li class="leading-loose">Разглаживание морщин;</li>
+            <li class="leading-loose">Антиоксидантная защита кожи от негативного воздействия свободных радикалов;</li>
+            <li class="leading-loose">Омоложение и лифтинг кожи.</li>
+        </ul>
+    </div>
+    </div>
+  </section>
+<section id="bullets2">
+    <div class="container bg-baseC mx-auto flex pt-10 md:flex-row flex-col items-center ">
+      <div class="lg:flex-grow md:w-1/2 lg:px-28 md:px-16 px-10 flex flex-col md:items-start md:text-left items-center ">
+        <h3 class="sm:text-4xl text-3xl mb-4 ">Пептиды влияют на следующие процессы в организме:</h3>
+        <ul class="text-base lg:text-xl list-disc mb-8 ">
+            <li class="leading-loose">Стимулируют производство в эпидермисе коллагена и эластина</li>
+            <li class="leading-loose">Активизируют восстановительные процессы</li>
+            <li class="leading-loose">Способствуют улучшению вида кожи</li>
+            <li class="leading-loose">Блокируют воспалительные процессы</li>
+            <li class="leading-loose">Улучшают циркуляцию крови на тканевом уровне</li>
+            <li class="leading-loose">Влияют на процесс синтеза меланина</li>
+            <li class="leading-loose">Увеличивают защитные силы</li>
+            <li class="leading-loose">Формируют естественные механизмы антиоксидантной защиты</li>
+        </ul>
+    </div>
+    <div class="relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
+        <img class="relative object-cover object-center w-3/4 h-3/4 z-30" alt="package" src="./img/bulletpoints2.png">
+        <div class="absolute bg-yellow-500 bg-opacity-25 w-4/6 h-full z-10 -top-4 left-20"></div>
+      </div>
+
+    </div>
+  </section>
+
+<section id="bullets3">
+    <div class="container bg-baseC mx-auto flex pt-10 md:flex-row flex-col items-center ">
+      <div class="relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex items-center justify-center">
+        <img class="relative object-cover object-center w-3/4 h-3/4 z-30" alt="face" src="./img/bulletpoints3.png">
+        <img class="absolute object-center h-[135%] z-10 -top-20 " alt="curve" src="./img/bulletpoints3Bg.svg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:px-28 md:px-16 px-10 flex flex-col md:items-start md:text-left items-center ">
+        <h3 class="sm:text-4xl text-3xl mb-8 lg:mb-14 ">Персонализированный уход это не только удобно, эффективно, но и доступно</h3>
+        <p class=" text-base lg:text-2xl ">Прежде всего определись для какой области нужна сыворотка:</p>
+        <ul class="text-base lg:text-xl list-disc mb-8 ml-4 lg:ml-14">
+            <li class="leading-loose">Для лица</li>
+            <li class="leading-loose">Под глаза</li>
+            <li class="leading-loose">Для зоны декольте</li>
+            <li class="leading-loose">Для Т зоны</li>
+        </ul>
+        <p class=" text-base lg:text-2xl ">Какой у тебя тип кожи:</p>
+        <ul class="text-base lg:text-xl list-disc mb-8 ml-4 lg:ml-14">
+            <li class="leading-loose">Нормальная</li>
+            <li class="leading-loose">Комбинированная</li>
+            <li class="leading-loose">Жирная</li>
+            <li class="leading-loose">Сухая</li>
+            <li class="leading-loose">Очень сухая</li>
+        </ul>
+        <p class=" text-base lg:text-2xl ">Какой эффект или эффекты ты хочешь получить:</p>
+        <ul class="text-base lg:text-xl list-disc mb-8 ml-4 lg:ml-14">
+            <li class="leading-loose">Антивозрастной</li>
+            <li class="leading-loose">Антиоксидантный</li>
+            <li class="leading-loose">Защита от HEV</li>
+            <li class="leading-loose">Детокс</li>
+            <li class="leading-loose">Сияние</li>
+            <li class="leading-loose">Увлажнение</li>
+            <li class="leading-loose">Лифтинг</li>
+            <li class="leading-loose">Сужения пор</li>
+            <li class="leading-loose">От морщин</li>
+            <li class="leading-loose">От прыщей</li>
+            <li class="leading-loose">От темных кругов</li>
+            <li class="leading-loose">Отбеливание</li>
+            <li class="leading-loose">Питание</li>
+        </ul>
+    </div>
+    </div>
+    <p class="container bg-baseC px-4 lg:px-32 text-base lg:text-2xl ">Укажи свой возраст, желаемый объём продукта 30/50 мл, особенности кожи (наличие воспалений, аллергических реакций). Наш технолог свяжется с Вами✆, предложит несколько вариантов.</p>
+
+</section>
+
+<section id="review">
+    <div class="container px-4 md:px-10 lg:px-28 bg-baseC  flex pt-10 flex-col items-center ">
+        <div class="w-56 h-12 mb-4 md:mb-7 py-2 bg-pink-500 rounded-3xl lg:text-2xl text-white text-center self-center">ОТЗЫВЫ</div>
+            <div class="flex flex-row items-center justify-around">
+                <div class="relative lg:max-w-lg md:w-1/6 w-2/6 min-w-[84px] mb-10 md:mb-0 ">
+                    <img class="m-2  relative object-cover object-center z-30" alt="user1" src="./img/user1.png">
+                </div>
+                <div class="lg:w-3/4 md:w-1/2 lg:px-8 md:px-3 px-2 flex flex-col md:items-start md:text-left items-center bg-white rounded-3xl shadow-[7px_4px_4px_0px_rgba(0,0,0,0.25)]">
+                    <p class="sm:text-lg text-sm mb-4 ">Увляжняющая сыворотка очень помогла избавиться от сухости кожи на лбу. В сочетание с кремами работает безотказно!</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row items-center justify-around">
+                <div class="lg:w-3/4 md:w-1/2 lg:px-8 md:px-3 px-2 flex flex-col md:items-start md:text-left items-center bg-white rounded-3xl shadow-[7px_4px_4px_0px_rgba(0,0,0,0.25)]">
+                    <p class="sm:text-lg text-sm mb-4 ">Сыворотка помогла. Спасибо за детальную консультацию и оперативную доставку.</p>
+                </div>
+                <div class="relative lg:max-w-lg md:w-1/6 w-2/6 min-w-[84px] mb-10 md:mb-0 ">
+                    <img class=" m-2 relative object-cover object-center z-30" alt="user1" src="./img/user2.png">
+                </div>
+            </div>
+
+            <div class="flex flex-row items-center justify-around">
+                <div class="relative lg:max-w-lg md:w-1/6 w-2/6 min-w-[84px] mb-10 md:mb-0 ">
+                    <img class="m-2  relative object-cover object-center z-30" alt="user1" src="./img/user3.png">
+                </div>
+                <div class="lg:w-3/4 md:w-1/2 lg:px-8 md:px-3 px-2 flex flex-col md:items-start md:text-left items-center bg-white rounded-3xl shadow-[7px_4px_4px_0px_rgba(0,0,0,0.25)]">
+                    <p class="sm:text-lg text-sm mb-4 ">моё любимое косметическое средство. как я раньше без него жила. кожа просто сияет, купила сыворотку для отбелевания, ушли за месяц все пигментные пятна под глазами. Спасибо!</p>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section id="workFlow">
+    <div class="container px-4 md:px-10 lg:px-28 bg-baseC  flex pt-10 flex-col items-center ">
+        <div class="w-56 h-12 mb-4 md:mb-7 py-2 bg-pink-500 rounded-3xl lg:text-2xl text-white text-center self-center">Как мы работаем?</div>
+
+    </div>
+</section>
+
+</body>
 </html>
