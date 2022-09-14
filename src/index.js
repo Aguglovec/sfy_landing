@@ -1,1 +1,69 @@
+"use strict";
+
 import './style.css';
+
+
+import {create} from './RestApi/RestApi'
+
+window.onload=function(){ 
+
+const ERROR_MESSAGES = {
+    name: 'Введите имя',
+    phone: 'Введите номер телефона',
+};
+
+const errorMsgEls = document.querySelectorAll("#error"); 
+const formInputs = document.querySelectorAll('.form-input');
+const userForm1 = document.querySelector("#userForm1");
+const userForm2 = document.querySelector("#userForm2");
+
+userForm1.addEventListener("submit", onItemSubmit);
+userForm2.addEventListener("submit", onItemSubmit);
+
+
+
+
+function onItemSubmit(e) {
+    e.preventDefault();
+    const newItem = getItem();
+
+    if (isValid(newItem)) {   
+        clearInput();
+        create(newItem);
+    }
+}
+
+function getItem() {
+    const item = {};
+console.log(formInputs);
+    formInputs.forEach((inp) => {
+        if (!item[inp.name] || item[inp.name] === '') {
+            item[inp.name] = inp.value;
+        }
+    });
+    console.log(item);
+    return item;
+}
+
+function isValid (obj) {
+    for (let key in obj) {
+        if (obj[key] === '')  {  //проверка на пустые поля всех input и выводом ошибки +с фокусировкой на поле с ошибкой
+            errorMsg(ERROR_MESSAGES[key]);
+            return false;
+        }
+    }
+    errorMsg();
+    return true;
+}
+
+function errorMsg(error) {
+    errorMsgEls.forEach(element => {
+        element.textContent = error;
+    });
+}
+
+function clearInput() {
+    userForm1.reset();
+    userForm2.reset();
+}
+}

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./dist/*.html'],
+  content: ['./src/*.html'],
   theme: {
     extend: {
       container: {
@@ -10,7 +10,7 @@ module.exports = {
         baseC: '#EEFFFE',
         title: '#0F6B55',
         heroMain: '#054032',
-        textMaim: '#423A2E',
+        textMain: '#423A2E',
         formText: '#06392D',
         formPlaceholder: '#283D2A',
         serumBg: '#B0F69752',
