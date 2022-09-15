@@ -33,20 +33,20 @@ const errorMsgEls = document.querySelectorAll("#error");
 const formInputs = document.querySelectorAll('.form-input');
 const userForm1 = document.querySelector("#userForm1");
 const userForm2 = document.querySelector("#userForm2");
+const bigMsgEL = document.querySelector("#bigMsg");
 
-// userForm1.addEventListener("submit", onItemSubmit);
-// userForm2.addEventListener("submit", onItemSubmit);
-
-
-
+userForm1.addEventListener("submit", onItemSubmit);
+userForm2.addEventListener("submit", onItemSubmit);
+bigMsgEL.addEventListener("click", onBigClick);
 
 function onItemSubmit(e) {
     e.preventDefault();
-    const newItem = getItem();
+    const newContact = getItem();
 
-    if (isValid(newItem)) {   
+    if (isValid(newContact)) {   
         clearInput();
-        create(newItem);
+        create(newContact)
+        .then(() => {bigMsgEL.classList.toggle('hidden')});
     }
 }
 
@@ -64,7 +64,7 @@ console.log(formInputs);
 
 function isValid (obj) {
     for (let key in obj) {
-        if (obj[key] === '')  {  //проверка на пустые поля всех input и выводом ошибки +с фокусировкой на поле с ошибкой
+        if (obj[key] === '')  { 
             errorMsg(ERROR_MESSAGES[key]);
             return false;
         }
@@ -83,4 +83,10 @@ function clearInput() {
     userForm1.reset();
     userForm2.reset();
 }
+
+function onBigClick() {
+    bigMsgEL.classList.toggle('hidden'); 
 }
+
+}
+

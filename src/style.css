@@ -19,3 +19,18 @@
     @apply w-56 h-12 mb-4 md:mb-7 bg-pink-500 hover:shadow-[0_4px_11px_0px_rgba(0,0,0,0.25)] hover:bg-pink-600 hover:border-white active:bg-opacity-40 hover:border-2 rounded-3xl lg:text-2xl text-white
 }
 }
+
+.screen-message {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000; 
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.centerMsg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
