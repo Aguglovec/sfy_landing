@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/*.html'],
+  content: ['./dist/*.html'],
   theme: {
     extend: {
       container: {
@@ -18,8 +18,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        heroBgLeft: "url('../dist/img/bg_left.png') ",
-        heroBgRight: "url('../dist/img/bg_right.png') ",
+        heroBgLeft: "url('../src/img/bg_left.png') ",
+        heroBgRight: "url('../src/img/bg_right.png') ",
 
       },
 
